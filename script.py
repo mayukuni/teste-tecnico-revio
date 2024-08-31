@@ -6,8 +6,10 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+# por favor, insira o caminho para o chromedriver
+chromedriver_path = 'insira o caminho para o chromedriver aqui. Exemplo: C:/Users/.../chromedriver-win64/chromedriver.exe'
 # inicia uma instância do Chrome WebDriver
-service = Service()
+service = Service(executable_path=chromedriver_path)
 
 # define a preferência para o navegador Chrome
 options = webdriver.ChromeOptions()
